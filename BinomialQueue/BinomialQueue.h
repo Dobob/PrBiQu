@@ -45,12 +45,11 @@ class BinomialQueue
 
     const static int DEFAULT_TREES = 1;
 
-
-		//Each insert, deleteMin, and merge, the hashTable is updated.
-		myHashTable< Comparable, BinomialNode* > hashTable_;
+    //Each insert, deleteMin, and merge, the hashTable is updated.
+    myHashTable< Comparable, BinomialNode* > hashTable_;
     vector<BinomialNode *> theTrees_;  // An array of tree roots
     int currentSize_;                  // Number of items in the priority queue
-		unsigned int work_ctr_=0;
+    unsigned int work_ctr_=0;
     
     /**
      * Find index of tree containing the smallest item in the priority queue.
@@ -74,14 +73,14 @@ class BinomialQueue
     //Internal method to clone subtree.
     BinomialNode * clone( BinomialNode * t ) const;
 
-		//adds every node paired with its pointer starting from from t to the hashTable.
-		void toHash(BinomialNode * t);
-
-		//finds the node containing key, and returns a pointer to it.
-		BinomialNode* find( const Comparable & key) const;
-
-		//always percolates up. Used only with remove.
-		BinomialNode* moveToRoot(BinomialNode * t);
+    //adds every node paired with its pointer starting from from t to the hashTable.
+    void toHash(BinomialNode * t);
+	
+    //finds the node containing key, and returns a pointer to it.
+    BinomialNode* find( const Comparable & key) const;
+	
+    //always percolates up. Used only with remove.
+    BinomialNode* moveToRoot(BinomialNode * t);
 
 
 
@@ -144,25 +143,24 @@ class BinomialQueue
     /**
      * Merge rhs into the priority queue.
      * rhs becomes empty. rhs must be different from this.
-     * Exercise 6.35 needed to make this operation more efficient.
      */
     void merge( BinomialQueue & rhs );
  
 
-		bool contains(const Comparable & key) const;
-		bool contains(Comparable && key) const;
-
-		const unsigned int& size() const;
-
-		//Test function: returns parent pointer of node containing key.
-		bool parentOf(const Comparable & key) const;
-
-		bool remove(const Comparable & key);
-		bool remove(Comparable && key);
-
-		void resetWorkCtr();
-
-		unsigned int getWorkCount();
+	bool contains(const Comparable & key) const;
+	bool contains(Comparable && key) const;
+	
+	const unsigned int& size() const;
+	
+	//Test function: returns parent pointer of node containing key.
+	bool parentOf(const Comparable & key) const;
+	
+	bool remove(const Comparable & key);
+	bool remove(Comparable && key);
+	
+	void resetWorkCtr();
+	
+	unsigned int getWorkCount();
 
 
 };
