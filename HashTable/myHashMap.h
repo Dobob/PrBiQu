@@ -14,11 +14,8 @@ using namespace std;
 
 /*
 README 
-i.		Completed every part.
 
-ii.		No bugs
-
-iii.	IMPORTANT: 1. For the sake of this homework. 
+IMPORTANT: 1. For the sake of this homework. 
 								 		This program only works for keys of unsigned int and string type.
 
 								 2. This program does not detect copies of strings in the second object parameter(in this case vector<string>).
@@ -34,7 +31,7 @@ iii.	IMPORTANT: 1. For the sake of this homework.
 						 OpenDocument text
 					
 
-iv.		input file : document/words.txt		
+input file : document/words.txt		
 
 
 			Output files used for probe testing:
