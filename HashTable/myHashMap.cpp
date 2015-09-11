@@ -1,4 +1,4 @@
-// By Mark Allen Weiss
+
 // Last modified by Wei Shi 04/25/2015
 
 #include "../PrimeFunction/prime.cpp"
