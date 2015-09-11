@@ -1,3 +1,4 @@
+// Based on Mark Allen Weiss' Data Structures and Algorithm Analysis in C++
 #ifndef PRIME_FUNCTIONS
 #define PRIME_FUNCTIONS
 
