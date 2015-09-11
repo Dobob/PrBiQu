@@ -12,37 +12,16 @@ using namespace std;
 /*
 README:
 
-WEI SHI HOMEWORK 4 
-
-i.		Completed every part.
-
-ii.		No bugs
-
-iii.	IMPORTANT: This program assumes no duplicates.
 
 			1. Open terminal and type make clean(to delete old object files) just in case.
 			2. Type make all.
 			3. Type: "./testBinomialQueue.exe" or "./testBinomialQueue" depending on terminal or IDE.
 			5. Follow the prompts.
 
-iv.		input file : document/words.txt		
-
+		input file : document/words.txt		
 
 
 */
-// Binomial queue class
-//
-// CONSTRUCTION: with no parameters
-//
-// ******************PUBLIC OPERATIONS*********************
-// void insert( x )       --> Insert x
-// deleteMin( )           --> Return and remove smallest item
-// Comparable findMin( )  --> Return smallest item
-// bool isEmpty( )        --> Return true if empty; else false
-// void makeEmpty( )      --> Remove all items
-// void merge( rhs )      --> Absorb rhs into this heap
-// ******************ERRORS********************************
-// Throws underflow_error as warranted
 
 template <typename Comparable>
 class BinomialQueue
