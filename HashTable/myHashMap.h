@@ -1,4 +1,4 @@
-
+// Based on Mark Allen Weiss' Data Structures and Algorithm Analysis in C++
 // Last modified by Wei Shi 04/25/2015
 
 #ifndef MY_HASH_MAP_H
